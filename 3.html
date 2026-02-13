@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Valentine!</title>
+
+        <link rel="shortcut icon" type="image/x-icon" href="Letter2.png" />
+
+        <style>
+            @font-face{
+                font-family: 'Railey Script';
+                src: url('Railey-PersonalUse.ttf'), format('ttf');
+            }
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity:1;
+                }
+            }
+            @keyframes pop {
+                0% {transform: scale(.2) translateY(-20px);}
+                75% {transform: scale(1.5) translateY(30px);}
+                100% {transform: scale(1) translateY(0);}
+            }
+            @keyframes tilting{
+                0% {transform: rotate(10deg) ;}
+                25% {transform: rotate(0deg) ;}
+                50% {transform: rotate(-10deg) ;}
+                75% {transform: rotate(0deg) ;}
+                100% {transform: rotate(10deg) ;}
+            }
+            body{
+                background-image: radial-gradient(circle, white,#fccfd5);;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+            }
+            .box1{
+                background: linear-gradient(180deg, #ffbac6, #fbb1bd, #fbaebb, #fca0af);
+                border-radius: 50px;
+                overflow: hidden;
+                width: 600px;
+                align-items: center;
+                padding: 25px 40px;
+                box-shadow:0 3px 40px #ff477b;
+            }
+            .box2{
+                border-radius: 20px;
+                overflow: hidden;
+            }
+            .box3{
+                background-color: #f1e4e3;
+                border-radius: 20px;
+                padding: 20px 35px;
+            }
+            .title{
+                font-family: 'Railey Script', cursive;
+                font-size: 150px;
+                color: #d14d72;
+                margin-bottom: 0px;
+            }
+            .text1{
+                font-family: 'Railey Script', cursive;
+                font-size: 75px;
+                color: white;
+                margin-bottom: 10px;
+            }
+            .image{
+                width: 400px;
+                display:block;
+                margin: auto;
+            }
+            .fade-in {
+                opacity: 1;
+                animation: fadeIn 1s ease-in;
+            }
+            .pop{
+                animation: pop .3s ease-in;
+            }
+            .copyright{
+                font-size: 20px;
+                color: #808080;
+                opacity: 0.5;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .tilting{
+                animation: tilting .55s infinite;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p class="title pop" align="center">Here's For<br>You !</p>
+        <img src="mocha.gif" class="image fade-in">
+        <div class="box1 fade-in">
+            <img src="Choco.png" style="margin-top: 50px;" class="image tilting">
+            <br>
+            <p class="text1" align="center">A Heart Chocolate !</p>
+        </div>
+        <br>
+        <p class="copyright" align="center">&copy; 2026 Messier16</p>
+    </body>
+</html>
